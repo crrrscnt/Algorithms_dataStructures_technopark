@@ -2,6 +2,7 @@
 
 Дан базовый интерфейс для представления ориентированного графа:
 
+```
 struct IGraph {
 virtual ~IGraph() {}
 	
@@ -11,6 +12,7 @@ virtual int VerticesCount() const  = 0;
 virtual std::vector<int> GetNextVertices(int vertex) const = 0;
 virtual std::vector<int> GetPrevVertices(int vertex) const = 0;
 };
+```
 
 Необходимо написать несколько реализаций интерфейса:
 -	ListGraph, хранящий граф в виде массива списков смежности,
